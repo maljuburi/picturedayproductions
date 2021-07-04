@@ -47,7 +47,13 @@
 	<div class="max-w-6xl mx-auto bg-gray-100 px-3 py-5">
 		<div class="grid grid-cols-12">
 			<div class="col-span-12 order-2 md:col-span-6 md:pl-5 pb-5">
-				<video width="100%" height="auto" controls class="rounded-lg overflow-hidden shadow-md">
+				<video
+					width="100%"
+					height="auto"
+					poster="https://res.cloudinary.com/maljuburi/image/upload/v1625435329/PictureDayProductions/movie-thumbnail.png"
+					controls
+					class="rounded-lg overflow-hidden shadow-md"
+				>
 					<source
 						src="https://res.cloudinary.com/maljuburi/video/upload/v1625292026/PictureDayProductions/Dear_Lily_Love_Patrick_Trailer.mp4"
 						type="video/mp4"
