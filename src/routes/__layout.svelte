@@ -15,4 +15,8 @@
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+
+	:global(html) {
+		scroll-behavior: smooth;
+	}
 </style>
