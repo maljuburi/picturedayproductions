@@ -52,7 +52,6 @@
 					height="auto"
 					poster="https://res.cloudinary.com/maljuburi/image/upload/v1625435329/PictureDayProductions/movie-thumbnail.png"
 					controls
-					class="rounded-lg overflow-hidden shadow-md"
 				>
 					<source
 						src="https://res.cloudinary.com/maljuburi/video/upload/v1625292026/PictureDayProductions/Dear_Lily_Love_Patrick_Trailer.mp4"
