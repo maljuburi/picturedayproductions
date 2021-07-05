@@ -1,3 +1,32 @@
+<script>
+	import { fade } from 'svelte/transition';
+	let formData = { name: '', email: '', message: '' };
+	let success = '';
+	let error = '';
+
+	const handleSubmit = async (e) => {
+		try {
+			const submit = await fetch('/api/contact', {
+				method: 'POST',
+				body: JSON.stringify(formData)
+			});
+
+			const data = await submit.json();
+
+			success = 'submitted';
+			setTimeout(() => {
+				success = '';
+			}, 5000);
+		} catch (ex) {
+			console.error('Error submitting a message', error);
+			error = ex;
+			setTimeout(() => {
+				error = '';
+			}, 5000);
+		}
+	};
+</script>
+
 <svelte:head>
 	<title>Picture Day Productions</title>
 </svelte:head>
@@ -106,27 +135,32 @@
 				<hr />
 			</div>
 			<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
-				<form
-					class=""
-					method="POST"
-					on:submit={(e) => {
-						e.preventDefault();
-						return false;
-					}}
-				>
+				<form on:submit|preventDefault={handleSubmit}>
 					<div class="form-section">
-						<label>Name:</label>
-						<input type="text" />
+						<label for="username">Name:</label>
+						<input id="username" type="text" bind:value={formData.name} required />
 					</div>
 					<div class="form-section">
-						<label>Email</label>
-						<input type="text" required />
+						<label for="email">Email</label>
+						<input id="email" type="text" bind:value={formData.email} required />
 					</div>
 					<div class="form-section">
-						<label>Message:</label>
-						<textarea rows="10" />
+						<label for="message">Message:</label>
+						<textarea id="message" rows="6" bind:value={formData.message} required />
 					</div>
-					<button type="submit" class="float-right">Send</button>
+					<div class="flex justify-between align-middle">
+						<button type="submit">Send</button>
+						{#if success}
+							<p transition:fade class="text-green-700 self-center">
+								Thank you! Your message has been received.
+							</p>
+						{/if}
+						{#if error}
+							<p transition:fade class="text-red-500 self-center">
+								Something went wrong, please try again!
+							</p>
+						{/if}
+					</div>
 				</form>
 			</div>
 		</div>
