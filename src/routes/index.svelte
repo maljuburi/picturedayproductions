@@ -15,8 +15,8 @@
 			</div>
 
 			<div class="col-span-12 md:col-span-6">
-				<h3 class="text-4xl text-center md:text-left pb-3">Jennifer Bartels</h3>
-				<hr class="mb-6" />
+				<h3 class="text-center md:text-left">Jennifer Bartels</h3>
+				<hr />
 				<p class="text-gray-700">
 					I was born and raised in Upstate New York, where I make my home today. My work history is
 					varied and has always inclined toward the creative. Years of training in ballet and modern
@@ -45,7 +45,7 @@
 	</div>
 	<div id="first-movie" />
 </div>
-<div class="pb-6 bg-gray-100">
+<div class="mb-6 bg-gray-100">
 	<div class="max-w-6xl mx-auto px-3 py-5">
 		<div class="grid grid-cols-12">
 			<div class="col-span-12 order-2 md:col-span-6 md:pl-5 pb-5">
@@ -64,8 +64,8 @@
 				</video>
 			</div>
 			<div class="col-span-12 md:col-span-6 order-1">
-				<h3 class="text-4xl text-center md:text-left pb-3">My first film</h3>
-				<hr class="my-3 mb-7 col-span-12" />
+				<h3 class="text-center md:text-left">My first film</h3>
+				<hr class="col-span-12" />
 				<p class="text-gray-700 pb-3">
 					Dear Lily, Love Patrick, is an intimate portrait of my mother's friendship with Patrick
 					Cowley, disco producer, electronic music pioneer, and Hi-NRG music innovator. I originally
@@ -77,7 +77,7 @@
 		</div>
 	</div>
 </div>
-<div class="pb-6">
+<div class="mb-6">
 	<div class="max-w-6xl mx-auto px-3 py-5">
 		<div class="grid grid-cols-12">
 			<div class="col-span-12">
@@ -97,5 +97,38 @@
 			</div>
 		</div>
 	</div>
-	<div name="contact" />
+
+	<div class="max-w-6xl mx-auto px-3 py-5">
+		<div class="grid grid-cols-12">
+			<div id="contact" />
+			<div class="col-span-12">
+				<h3 class="text-center md:text-left">Contact</h3>
+				<hr />
+			</div>
+			<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
+				<form
+					class=""
+					method="POST"
+					on:submit={(e) => {
+						e.preventDefault();
+						return false;
+					}}
+				>
+					<div class="form-section">
+						<label>Name:</label>
+						<input type="text" />
+					</div>
+					<div class="form-section">
+						<label>Email</label>
+						<input type="text" required />
+					</div>
+					<div class="form-section">
+						<label>Message:</label>
+						<textarea rows="10" />
+					</div>
+					<button type="submit" class="float-right">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </div>

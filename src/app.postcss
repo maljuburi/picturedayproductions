@@ -1,0 +1,63 @@
+@tailwind base;
+/* Write your global styles here, in PostCSS syntax */
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+@layer base {
+	h1 {
+		@apply text-8xl text-indigo-700;
+	}
+	h2 {
+		@apply text-6xl text-indigo-700;
+	}
+
+	h3 {
+		@apply text-4xl py-3 text-indigo-700;
+	}
+
+	h4 {
+		@apply text-3xl py-3 text-indigo-700;
+	}
+
+	hr {
+		@apply my-4;
+	}
+
+	.form-section {
+		@apply my-5;
+	}
+
+	[type='text'],
+	[type='email'],
+	[type='url'],
+	[type='password'],
+	[type='number'],
+	[type='date'],
+	[type='datetime-local'],
+	[type='month'],
+	[type='search'],
+	[type='tel'],
+	[type='time'],
+	[type='week'],
+	[multiple],
+	textarea,
+	select {
+		@apply rounded-lg shadow-sm border-gray-300 w-full focus:border-indigo-500 focus:ring-indigo-500;
+	}
+
+	label {
+		@apply text-indigo-700 block py-2;
+	}
+
+	button {
+		@apply bg-indigo-700 text-white px-8 py-3 rounded-lg hover:bg-indigo-600;
+	}
+
+	a {
+		@apply text-indigo-700;
+	}
+}
