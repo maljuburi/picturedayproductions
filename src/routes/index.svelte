@@ -18,8 +18,8 @@
 				success = '';
 			}, 5000);
 		} catch (ex) {
-			console.error('Error submitting a message', error);
 			error = ex;
+			console.error('Error submitting a message', error);
 			setTimeout(() => {
 				error = '';
 			}, 5000);
