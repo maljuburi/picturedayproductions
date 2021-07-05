@@ -44,7 +44,9 @@
 		</div>
 	</div>
 	<div id="first-movie" />
-	<div class="max-w-6xl mx-auto bg-gray-100 px-3 py-5">
+</div>
+<div class="pb-6 bg-gray-100">
+	<div class="max-w-6xl mx-auto px-3 py-5">
 		<div class="grid grid-cols-12">
 			<div class="col-span-12 order-2 md:col-span-6 md:pl-5 pb-5">
 				<video
@@ -74,6 +76,8 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="pb-6">
 	<div class="max-w-6xl mx-auto px-3 py-5">
 		<div class="grid grid-cols-12">
 			<div class="col-span-12">
