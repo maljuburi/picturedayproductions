@@ -93,7 +93,7 @@
 
 <div class="mb-6 bg-gray-100">
 	<div class="max-w-6xl mx-auto px-3">
-		<div class="bg-movie-poster bg-cover bg-center h-80 md:h-160 flex" />
+		<div class="bg-movie-poster bg-cover bg-center h-60 md:h-160 flex" />
 		<div class="grid grid-cols-12">
 			<div class="col-span-12">
 				<h3 class="text-center pt-5">Projects</h3>
@@ -184,7 +184,7 @@
 		</div>
 		<hr />
 		<div class="md:bg-report-card bg-none bg-cover bg-center md:h-80 h-20 relative">
-			<div class="flex absolute bottom-2 right-28 md:bg-card bg-none px-6">
+			<div class="flex absolute bottom-2 right-28 md:bg-card bg-none px-0 md:px-6">
 				<p class="text-lg self-center">Follow me on :</p>
 				<a href="#" class="mx-1">
 					<Facebook />
