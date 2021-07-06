@@ -7,7 +7,7 @@
 		</h1>
 		<nav class="flex md:justify-end justify-center col-span-12 md:col-span-6">
 			<a class="pr-4" href=".">Bio</a>
-			<a class="pr-4" href="#first-movie">My First Movie</a>
+			<a class="pr-4" href="#projects">Projects</a>
 			<a class="pr-4" href="#contact">Contact</a>
 		</nav>
 	</div>

@@ -1,4 +1,6 @@
 <script>
+	import Instagram from '$lib/icons/instagram.svelte';
+	import Facebook from '$lib/icons/facebook.svelte';
 	import { fade } from 'svelte/transition';
 	let formData = { name: '', email: '', message: '' };
 	let success = '';
@@ -31,10 +33,24 @@
 	<title>Picture Day Productions</title>
 </svelte:head>
 
+<div class="bg-hero-image bg-cover bg-center h-80 md:h-160 flex">
+	<div class="max-w-6xl mx-auto px-3 self-center">
+		<div class="grid grid-cols-12">
+			<div class="col-span-8">
+				<h4 class="text-white font-thin">
+					I created Picture Day Productions to make art that is freeing, collaborative, and healing,
+					and that asks more questions than it answers so we can continue to wander in the infinite
+					possibility of what life can be.
+				</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="py-6">
 	<div class="max-w-6xl mx-auto px-3">
 		<div class="grid grid-cols-12">
-			<div class="col-span-12 md:col-span-6 md:pr-5 pb-5">
+			<div class="col-span-12 md:col-span-4 md:pr-5 pb-5">
 				<img
 					class="rounded-lg overflow-hidden shadow-md"
 					src="https://res.cloudinary.com/maljuburi/image/upload/v1625291259/PictureDayProductions/JB_2020.jpg"
@@ -43,7 +59,7 @@
 				/>
 			</div>
 
-			<div class="col-span-12 md:col-span-6">
+			<div class="col-span-12 md:col-span-8">
 				<h3 class="text-center md:text-left">Jennifer Bartels</h3>
 				<hr />
 				<p class="text-gray-700">
@@ -72,12 +88,25 @@
 			</div>
 		</div>
 	</div>
-	<div id="first-movie" />
 </div>
+<div id="projects" />
+
 <div class="mb-6 bg-gray-100">
-	<div class="max-w-6xl mx-auto px-3 py-5">
+	<div class="max-w-6xl mx-auto px-3">
+		<div class="bg-movie-poster bg-cover bg-center h-80 md:h-160 flex" />
 		<div class="grid grid-cols-12">
-			<div class="col-span-12 order-2 md:col-span-6 md:pl-5 pb-5">
+			<div class="col-span-12">
+				<h3 class="text-center pt-5">Projects</h3>
+				<hr class="col-span-12" />
+				<p class="text-gray-700 pb-3">
+					Dear Lily, Love Patrick, is an intimate portrait of my mother's friendship with Patrick
+					Cowley, disco producer, electronic music pioneer, and Hi-NRG music innovator. I originally
+					envisioned a broader overview of Patrick's career up until his death from AIDS in 1982,
+					but another pandemic hit just as I was beginning to arrange travel and interviews, and the
+					country went into lockdown as COVID-19 struck.
+				</p>
+			</div>
+			<div class="col-span-12 pb-5">
 				<video
 					width="100%"
 					height="auto"
@@ -91,17 +120,6 @@
 
 					Your browser does not support the video tag.
 				</video>
-			</div>
-			<div class="col-span-12 md:col-span-6 order-1">
-				<h3 class="text-center md:text-left">My first film</h3>
-				<hr class="col-span-12" />
-				<p class="text-gray-700 pb-3">
-					Dear Lily, Love Patrick, is an intimate portrait of my mother's friendship with Patrick
-					Cowley, disco producer, electronic music pioneer, and Hi-NRG music innovator. I originally
-					envisioned a broader overview of Patrick's career up until his death from AIDS in 1982,
-					but another pandemic hit just as I was beginning to arrange travel and interviews, and the
-					country went into lockdown as COVID-19 struck.
-				</p>
 			</div>
 		</div>
 	</div>
@@ -162,6 +180,18 @@
 						{/if}
 					</div>
 				</form>
+			</div>
+		</div>
+		<hr />
+		<div class="md:bg-report-card bg-none bg-cover bg-center md:h-80 h-20 relative">
+			<div class="flex absolute bottom-2 right-28 md:bg-card bg-none px-6">
+				<p class="text-lg self-center">Follow me on :</p>
+				<a href="#" class="mx-1">
+					<Facebook />
+				</a>
+				<a href="#" class="mx-1">
+					<Instagram />
+				</a>
 			</div>
 		</div>
 	</div>
