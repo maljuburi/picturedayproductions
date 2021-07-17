@@ -2,7 +2,7 @@
 	id="Layer_1"
 	style="enable-background:new 0 0 1000 1000;"
 	version="1.1"
-	width="50px"
+	width="35px"
 	viewBox="0 0 1000 1000"
 	xml:space="preserve"
 	xmlns="http://www.w3.org/2000/svg"

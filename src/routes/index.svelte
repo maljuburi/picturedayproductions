@@ -38,7 +38,7 @@
 		<div class="grid grid-cols-12">
 			<div class="col-span-8">
 				<h4 class="text-white italic font-thin">
-					<q class="hero-quote font-serif">
+					<q class="hero-quote">
 						I created Picture Day Productions to make art that is freeing, collaborative, and
 						healing, and that asks more questions than it answers so we can continue to wander in
 						the infinite possibility of what life can be.
@@ -50,22 +50,25 @@
 </div>
 <div id="bio" />
 
-<section>
+<section class="font-old">
 	<div class="py-6">
 		<div class="max-w-6xl mx-auto px-3">
 			<div class="grid grid-cols-12">
-				<div class="col-span-12 md:col-span-4 md:pr-5 pb-5">
+				<div class="col-span-12 md:col-span-5 lg:col-span-4 md:pr-5 pb-5">
+					<div
+						class="hidden md:block bg-bio-image bg-cover bg-center rounded-lg shadow-md h-full w-full"
+					/>
 					<img
-						class="rounded-lg overflow-hidden shadow-md"
+						class="md:hidden rounded-lg overflow-hidden shadow-md"
 						src="https://res.cloudinary.com/maljuburi/image/upload/v1625291259/PictureDayProductions/JB_2020.jpg"
 						alt="random"
 						width="100%"
 					/>
 				</div>
-				<div class="col-span-12 md:col-span-8">
+				<div class="col-span-12 md:col-span-7 lg:col-span-8">
 					<h3 class="text-center md:text-left">Jennifer Bartels</h3>
 					<hr />
-					<p class="text-gray-700">
+					<p class="text-gray-700 pb-5">
 						I was born and raised in Upstate New York, where I make my home today. My work history
 						is varied and has always inclined toward the creative. Years of training in ballet and
 						modern dance led to a stint as a professional dancer with the Maude Baum and Company
@@ -100,14 +103,18 @@
 		</div>
 	</div>
 </section>
-<section>
+<section class="font-old">
 	<div id="projects" />
 
 	<div class="py-10 bg-gray-100">
 		<div class="max-w-6xl mx-auto px-3">
 			<h3 class="text-center md:text-left pt-5">Projects</h3>
 			<hr class="col-span-12" />
-			<div class="bg-movie-poster bg-cover bg-center h-60 md:h-160 mb-20" />
+			<img
+				class="mb-20"
+				src="https://res.cloudinary.com/maljuburi/image/upload/v1626504660/PictureDayProductions/movie-poster-wide-v2.png"
+				alt="movie poster"
+			/>
 			<div class="grid grid-cols-12">
 				<div class="col-span-12 md:col-span-6 flex mb-20 md:mb-0">
 					<p class="text-gray-700 md:self-center pb-3 px-5">
@@ -138,7 +145,7 @@
 	</div>
 </section>
 
-<section>
+<section class="font-old">
 	<div class="max-w-6xl mx-auto px-3">
 		<div class="grid grid-cols-12">
 			<div class="col-span-12">
@@ -152,8 +159,9 @@
 		</div>
 	</div>
 </section>
+
 <div class="max-w-6xl mx-auto px-3 py-5">
-	<div class="grid grid-cols-12">
+	<div class="grid grid-cols-12 font-old">
 		<div id="contact" />
 		<div class="col-span-12">
 			<h3 class="text-center md:text-left">Contact</h3>
@@ -190,13 +198,20 @@
 		</div>
 	</div>
 	<hr />
-	<div class="md:bg-report-card bg-none bg-cover bg-center md:h-80 h-20 mt-20 relative">
+	<!-- TODO: revisit again in the future. 
+    <div class="md:bg-report-card bg-none bg-cover bg-center md:h-80 h-20 mt-20 relative">
 		<div class="flex absolute bottom-2 right-28 md:bg-card bg-none px-0 md:px-6">
 			<p class="text-lg self-center">Follow me on :</p>
 			<a href="#" class="mx-1">
 				<Instagram />
 			</a>
 		</div>
+	</div> -->
+	<div class="flex justify-center md:justify-end items-center">
+		<p>Follow me on :</p>
+		<a href="#" class="mx-1">
+			<Instagram />
+		</a>
 	</div>
 </div>
 
