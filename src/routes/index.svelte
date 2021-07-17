@@ -37,7 +37,7 @@
 	<div class="max-w-6xl mx-auto px-3 self-center">
 		<div class="grid grid-cols-12">
 			<div class="col-span-8">
-				<h4 class="text-white italic font-thin">
+				<h4 class="text-white italic">
 					<q class="hero-quote">
 						I created Picture Day Productions to make art that is freeing, collaborative, and
 						healing, and that asks more questions than it answers so we can continue to wander in
