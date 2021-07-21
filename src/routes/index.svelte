@@ -33,21 +33,24 @@
 	<title>Picture Day Productions</title>
 </svelte:head>
 
-<div class="bg-hero-image bg-cover h-80 md:h-160 flex">
-	<div class="max-w-6xl mx-auto px-3 self-center">
-		<div class="grid grid-cols-12">
-			<div class="col-span-8">
-				<h4 class="text-white italic">
-					<q class="hero-quote">
-						I created Picture Day Productions to make art that is freeing, collaborative, and
-						healing, and that asks more questions than it answers so we can continue to wander in
-						the infinite possibility of what life can be.
-					</q>
-				</h4>
+<div class="max-w-7xl mx-auto">
+	<div class="bg-hero-image bg-cover h-80 md:h-160 flex max-w-">
+		<div class="max-w-6xl mx-auto px-3 self-center">
+			<div class="grid grid-cols-12">
+				<div class="col-span-8">
+					<h4 class="text-white italic">
+						<q class="hero-quote">
+							I created Picture Day Productions to make art that is freeing, collaborative, and
+							healing, and that asks more questions than it answers so we can continue to wander in
+							the infinite possibility of what life can be.
+						</q>
+					</h4>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 <div id="bio" />
 
 <section class="font-old">
@@ -140,21 +143,14 @@
 						Your browser does not support the video tag.
 					</video>
 				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="font-old">
-	<div class="max-w-6xl mx-auto px-3">
-		<div class="grid grid-cols-12">
-			<div class="col-span-12">
-				<p class="text-gray-700 pb-3">
-					Consequently, I had to let go of my original and, admittedly, loftier goal and focus on
-					the primary resources I had at hand, a manila envelope of keepsakes my mother had held
-					onto, which included some cherished letters to her from Patrick. I recognized them for the
-					treasures that they are and made them the backbone of the film.
-				</p>
+				<div class="col-span-12">
+					<p class="text-gray-700 md:self-center pb-3 px-5">
+						Consequently, I had to let go of my original and, admittedly, loftier goal and focus on
+						the primary resources I had at hand, a manila envelope of keepsakes my mother had held
+						onto, which included some cherished letters to her from Patrick. I recognized them for
+						the treasures that they are and made them the backbone of the film.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
