@@ -113,6 +113,7 @@
 		<div class="max-w-6xl mx-auto px-3">
 			<h3 class="text-center md:text-left pt-5">Projects</h3>
 			<hr class="col-span-12" />
+			<h4 class="text-center"><strong><em>Dear Lily, Love Patrick</em></strong></h4>
 			<img
 				class="mb-20"
 				src="https://res.cloudinary.com/maljuburi/image/upload/v1626504660/PictureDayProductions/movie-poster-wide-v2.png"
