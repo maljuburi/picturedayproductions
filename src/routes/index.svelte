@@ -34,7 +34,7 @@
 </svelte:head>
 
 <!-- <div class="max-w-7xl mx-auto"> -->
-<div class="bg-hero-image bg-cover h-80 md:h-160 xl:h-200 flex max-w-">
+<div class="bg-hero-image bg-cover h-80 lg:h-160 2xl:h-200 flex max-w-">
 	<div class="max-w-6xl mx-auto px-3 self-center">
 		<div class="grid grid-cols-12">
 			<div class="col-span-8">
