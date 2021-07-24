@@ -206,7 +206,7 @@
 	</div> -->
 	<div class="flex justify-center md:justify-end items-center">
 		<p>Follow me on :</p>
-		<a href="#" class="mx-1">
+		<a href="https://www.instagram.com/jennifercbartels/" class="mx-1">
 			<Instagram />
 		</a>
 	</div>
