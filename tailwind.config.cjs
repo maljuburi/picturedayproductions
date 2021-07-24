@@ -4,7 +4,9 @@ const config = {
 	theme: {
 		extend: {
 			height: () => ({
-				160: '40rem'
+				160: '40rem',
+				200: '60rem',
+				320: '80rem'
 			}),
 			backgroundImage: () => ({
 				'hero-image':
