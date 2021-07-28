@@ -33,23 +33,23 @@
 	<title>Picture Day Productions</title>
 </svelte:head>
 
-<!-- <div class="max-w-7xl mx-auto"> -->
-<div class="bg-hero-image bg-cover h-80 lg:h-160 2xl:h-200 flex max-w-">
-	<div class="max-w-6xl mx-auto px-3 self-center">
-		<div class="grid grid-cols-12">
-			<div class="col-span-8">
-				<h4 class="text-white italic">
-					<q class="hero-quote">
-						I created Picture Day Productions to make art that is freeing, collaborative, and
-						healing, and that asks more questions than it answers so we can continue to wander in
-						the infinite possibility of what life can be.
-					</q>
-				</h4>
+<div class="max-w-7xl mx-auto">
+	<div class="bg-hero-image bg-cover h-80 md:h-160 flex">
+		<div class="max-w-6xl mx-auto px-3 self-center">
+			<div class="grid grid-cols-12">
+				<div class="col-span-8">
+					<h4 class="text-white italic">
+						<q class="hero-quote">
+							I created Picture Day Productions to make art that is freeing, collaborative, and
+							healing, and that asks more questions than it answers so we can continue to wander in
+							the infinite possibility of what life can be.
+						</q>
+					</h4>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- </div> -->
 
 <div id="bio" />
 
@@ -116,7 +116,7 @@
 			<h4 class="text-center"><strong><em>Dear Lily, Love Patrick</em></strong></h4>
 			<img
 				class="mb-20"
-				src="https://res.cloudinary.com/maljuburi/image/upload/v1626504660/PictureDayProductions/movie-poster-wide-v2.png"
+				src="https://res.cloudinary.com/maljuburi/image/upload/v1626504660/PictureDayProductions/movie-poster-wide-v3.png"
 				alt="movie poster"
 			/>
 			<div class="grid grid-cols-12">
