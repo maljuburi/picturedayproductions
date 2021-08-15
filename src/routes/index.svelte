@@ -6,6 +6,8 @@
 	let success = '';
 	let error = '';
 
+	document.querySelector('.remove-me').remove();
+
 	// const handleSubmit = async (e) => {
 	// 	try {
 	// 		const submit = await fetch('/api/contact', {
@@ -167,7 +169,8 @@
 		</div>
 		<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
 			<!-- <form action="POST" data-netlify="true" on:submit|preventDefault={handleSubmit}> -->
-			<form name="contact" method="POST" netlify>
+			<form name="contact" method="POST">
+				<input type="hidden" name="contact-form" value="contact" />
 				<div class="form-section">
 					<label for="username">Name:</label>
 					<input id="username" name="name" type="text" bind:value={formData.name} required />
