@@ -6,7 +6,7 @@
 	let success = '';
 	let error = '';
 
-	document.querySelector('.remove-me').remove();
+	// document.querySelector('.remove-me').remove();
 
 	// const handleSubmit = async (e) => {
 	// 	try {
