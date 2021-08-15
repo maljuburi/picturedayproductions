@@ -11,24 +11,14 @@
 <body>
   <div id="svelte">%svelte.body%</div>
 
-  <form name="contact" method="POST" netlify class="remove-me" style="display: none;">
-    <div>
-      <label for="username">Name:</label>
+  <div class="remove-me" style="display: none;">
+    <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
       <input id="username" name="name" type="text" required />
-    </div>
-    <div>
-      <label for="email">Email</label>
       <input id="email" name="email" type="text" required />
-    </div>
-    <div>
-      <label for="message">Message:</label>
       <textarea id="message" name="message" rows="6" required />
-    </div>
-
-    <div>
       <div data-netlify-recaptcha="true" />
-    </div>
-  </form>
+    </form>
+  </div>
 </body>
 
 </html>
