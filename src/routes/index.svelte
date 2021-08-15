@@ -195,10 +195,6 @@
 					<textarea id="message" name="message" rows="6" bind:value={formData.message} required />
 				</div>
 
-				<div class="form-section">
-					<input name={'bot-field'} />
-				</div>
-
 				<div class="flex justify-between align-middle">
 					<button type="submit">Send</button>
 					<!-- {#if success}
