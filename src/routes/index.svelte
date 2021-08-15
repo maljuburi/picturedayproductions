@@ -16,6 +16,7 @@
 			const data = await submit.json();
 
 			success = 'submitted';
+			formData = { name: '', email: '', message: '' };
 			setTimeout(() => {
 				success = '';
 			}, 5000);
@@ -179,7 +180,7 @@
 					<textarea id="message" rows="6" bind:value={formData.message} required />
 				</div>
 				<div class="flex justify-between align-middle">
-					<button type="submit">Send</button>
+					<button type="submit" disabled={success || error}>Send</button>
 					{#if success}
 						<p transition:fade class="text-green-700 self-center">
 							Thank you! Your message has been received.
