@@ -181,7 +181,7 @@
 		</div>
 		<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
 			<!-- <form data-netlify="true" on:submit|preventDefault={handleSubmit}> -->
-			<form id="contact-form" name="contact" method="POST" data-netlify="true">
+			<form id="contact-form" name="contact" method="POST" netlify={true}>
 				<div class="form-section">
 					<label for="username">Name:</label>
 					<input id="username" name="name" type="text" bind:value={formData.name} required />
