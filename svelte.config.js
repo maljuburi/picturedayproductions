@@ -1,16 +1,24 @@
-import preprocess from "svelte-preprocess";
+import preprocess from 'svelte-preprocess';
 /** @type {import('@sveltejs/kit').Config} */
 import adapter from '@sveltejs/adapter-netlify';
 const config = {
-    kit: {
+	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: true,
+			pages: ['*']
+		}
 	},
 
-    preprocess: [preprocess({
-        "postcss": true
-    })]
+	preprocess: [
+		preprocess({
+			postcss: true
+		})
+	]
 };
 
 export default config;
