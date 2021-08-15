@@ -10,38 +10,38 @@
 	let success = '';
 	let error = '';
 
-	const handleSubmit = async (e) => {
-		let myForm = document.getElementById('contact-form');
-		let myFromData = new FormData(myForm);
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(myFromData).toString()
-		})
-			.then(() => console.log('Form successfully submitted'))
-			.catch((error) => alert(error));
+	// const handleSubmit = async (e) => {
+	// let myForm = document.getElementById('contact-form');
+	// let myFromData = new FormData(myForm);
+	// fetch('/', {
+	// 	method: 'POST',
+	// 	headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+	// 	body: new URLSearchParams(myFromData).toString()
+	// })
+	// 	.then(() => console.log('Form successfully submitted'))
+	// 	.catch((error) => alert(error));
 
-		// try {
-		// 	const submit = await fetch('/api/contact', {
-		// 		method: 'POST',
-		// 		body: JSON.stringify(formData)
-		// 	});
+	// try {
+	// 	const submit = await fetch('/api/contact', {
+	// 		method: 'POST',
+	// 		body: JSON.stringify(formData)
+	// 	});
 
-		// 	const data = await submit.json();
+	// 	const data = await submit.json();
 
-		// 	success = 'submitted';
-		// 	formData = { name: '', email: '', message: '' };
-		// 	setTimeout(() => {
-		// 		success = '';
-		// 	}, 5000);
-		// } catch (ex) {
-		// 	error = ex;
-		// 	console.error('Error submitting a message', error);
-		// 	setTimeout(() => {
-		// 		error = '';
-		// 	}, 5000);
-		// }
-	};
+	// 	success = 'submitted';
+	// 	formData = { name: '', email: '', message: '' };
+	// 	setTimeout(() => {
+	// 		success = '';
+	// 	}, 5000);
+	// } catch (ex) {
+	// 	error = ex;
+	// 	console.error('Error submitting a message', error);
+	// 	setTimeout(() => {
+	// 		error = '';
+	// 	}, 5000);
+	// }
+	// };
 </script>
 
 <svelte:head>
@@ -181,13 +181,7 @@
 		</div>
 		<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
 			<!-- <form data-netlify="true" on:submit|preventDefault={handleSubmit}> -->
-			<form
-				id="contact-form"
-				name="contact"
-				method="POST"
-				netlify
-				on:submit|preventDefault={handleSubmit}
-			>
+			<form id="contact-form" name="contact" method="POST" data-netlify="true">
 				<div class="form-section">
 					<label for="username">Name:</label>
 					<input id="username" name="name" type="text" bind:value={formData.name} required />
