@@ -10,19 +10,17 @@
 	let success = '';
 	let error = '';
 
-	let submitForm = (event) => {
-		let formdata = new FormData();
-		formdata.append('name', `${formStore.name}`); //notice we cast the store values as strings with the `${var}` syntax
-		formdata.append('email', `${formStore.email}`);
-		formdata.append('message', `${formStore.message}`);
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		let myForm = document.getElementById('contact-form');
+		let formData = new FormData(myForm);
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: formdata
+			body: new URLSearchParams(formData).toString()
 		})
-			.then(() => alert('Success!'))
+			.then(() => console.log('Form successfully submitted'))
 			.catch((error) => alert(error));
-		event.preventDefault();
 	};
 
 	// const handleSubmit = async (e) => {
@@ -197,13 +195,13 @@
 		<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
 			<!-- <form data-netlify="true" on:submit|preventDefault={handleSubmit}> -->
 			<form
+				id="contact-form"
 				name="contact"
 				method="POST"
 				netlify={true}
 				netlify-honeypot={'bot-field'}
-				on:submit={submitForm}
+				on:submit={handleSubmit}
 			>
-				<input type="hidden" name="form-name" value="contact" />
 				<div class="form-section">
 					<label for="username">Name:</label>
 					<input id="username" name="name" type="text" bind:value={formStore.name} required />
