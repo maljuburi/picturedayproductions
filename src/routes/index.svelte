@@ -6,9 +6,24 @@
 	import Instagram from '$lib/icons/instagram.svelte';
 	import Facebook from '$lib/icons/facebook.svelte';
 	import { fade } from 'svelte/transition';
-	let formData = { name: '', email: '', message: '' };
+	let formStore = { name: '', email: '', message: '' };
 	let success = '';
 	let error = '';
+
+	let submitForm = (event) => {
+		let formdata = new FormData();
+		formdata.append('name', `${formStore.name}`); //notice we cast the store values as strings with the `${var}` syntax
+		formdata.append('email', `${formStore.email}`);
+		formdata.append('message', `${formStore.message}`);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: formdata
+		})
+			.then(() => alert('Success!'))
+			.catch((error) => alert(error));
+		event.preventDefault();
+	};
 
 	// const handleSubmit = async (e) => {
 	// let myForm = document.getElementById('contact-form');
@@ -181,18 +196,24 @@
 		</div>
 		<div class="col-span-12 md:col-span-8 md:col-start-3 md:col-end-11">
 			<!-- <form data-netlify="true" on:submit|preventDefault={handleSubmit}> -->
-			<form name="contact" method="POST" netlify={true} netlify-honeypot={'bot-field'}>
+			<form
+				name="contact"
+				method="POST"
+				netlify={true}
+				netlify-honeypot={'bot-field'}
+				on:submit={submitForm}
+			>
 				<div class="form-section">
 					<label for="username">Name:</label>
-					<input id="username" name="name" type="text" bind:value={formData.name} required />
+					<input id="username" name="name" type="text" bind:value={formStore.name} required />
 				</div>
 				<div class="form-section">
 					<label for="email">Email</label>
-					<input id="email" name="email" type="text" bind:value={formData.email} required />
+					<input id="email" name="email" type="text" bind:value={formStore.email} required />
 				</div>
 				<div class="form-section">
 					<label for="message">Message:</label>
-					<textarea id="message" name="message" rows="6" bind:value={formData.message} required />
+					<textarea id="message" name="message" rows="6" bind:value={formStore.message} required />
 				</div>
 
 				<div class="flex justify-between align-middle">
