@@ -203,6 +203,7 @@
 				netlify-honeypot={'bot-field'}
 				on:submit={submitForm}
 			>
+				<input type="hidden" name="form-name" value="contact" />
 				<div class="form-section">
 					<label for="username">Name:</label>
 					<input id="username" name="name" type="text" bind:value={formStore.name} required />
